@@ -4,5 +4,5 @@
     git rm --cached -r target/
 
 ### Docker Command
-    docker build -t restaurant_catalogue .
+    docker build -t aariskazi/restaurant_catalogue:v1.0.0 .
     docker run -it --rm --name my-running-app restaurant_catalogue
