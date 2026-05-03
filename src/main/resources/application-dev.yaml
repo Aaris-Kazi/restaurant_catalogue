@@ -1,0 +1,19 @@
+spring:
+    datasource:
+        url: jdbc:mysql://localhost:3306/restaurant_listing
+        username: root
+        password: 12345
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+
+restaurant:
+    restaurant_listing:
+        url: http://192.168.0.114:8081
