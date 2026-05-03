@@ -16,4 +16,10 @@
 
 ### Docker Command
     docker build -t aariskazi/restaurant_catalogue:v1.0.0 .
-    docker run -it --rm --name restaurant-catalogue-container aariskazi/restaurant_catalogue:latest
+
+    docker run -d \
+    --env-file .env \
+    -e MACHINE_IP=$MACHINE_IP \
+    -p 8081:8080 \
+    --name restaurant_catalogue \
+    aariskazi/restaurant_catalogue:v1.0.0
