@@ -9,9 +9,9 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://192.168.0.114:8761/eureka/
+      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://192.168.0.114:8761/eureka/}
 
 
 restaurant:
     restaurant_listing:
-        url: http://RESTAURANT_LISTING
+        url: ${RESTAURANT_LISTING_URL:http://192.168.0.114:8081}
